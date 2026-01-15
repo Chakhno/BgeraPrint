@@ -1,4 +1,5 @@
 This application aggregates and uses the following third-party software executables. 
+None of these programs have been modified.
 These are separate works and are subject to their own respective licenses.
 
 1. PrusaSlicer
