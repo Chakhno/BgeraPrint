@@ -88,3 +88,14 @@ BgeraPrint aggregates the following tools:
 
 Each tool is distributed under its respective license.  
 Full license texts and notices are provided in the `LICENSES/` directory and `NOTICE_THIRD_PARTY.md`.
+
+---
+
+---
+
+## Copyright
+
+© 2026 Luka Chakhnashvili. All rights reserved.
+
+The source code of BgeraPrint is not licensed for redistribution or modification,
+except as required by the licenses of aggregated third-party components.
