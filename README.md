@@ -88,8 +88,3 @@ BgeraPrint aggregates the following tools:
 
 Each tool is distributed under its respective license.  
 Full license texts and notices are provided in the `LICENSES/` directory and `NOTICE_THIRD_PARTY.md`.
-
----
-
-## Repository Contents
-
