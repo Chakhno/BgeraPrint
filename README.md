@@ -1,3 +1,4 @@
+
 # BgeraPrint
 
 **BgeraPrint** is a Windows console application designed to make 3D printing accessible through a **keyboard-only interface with audio instructions**. It allows users to create, slice, and print 3D models without navigating graphical interfaces, making it especially suitable for accessibility-focused workflows.
@@ -91,11 +92,11 @@ Full license texts and notices are provided in the `LICENSES/` directory and `NO
 
 ---
 
----
-
 ## Copyright
 
 © 2026 Luka Chakhnashvili. All rights reserved.
+
+The BgeraPrint name and logo are original works created by the author.
 
 The source code of BgeraPrint is not licensed for redistribution or modification,
 except as required by the licenses of aggregated third-party components.
