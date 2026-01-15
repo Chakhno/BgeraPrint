@@ -1,3 +1,6 @@
+<p align="left">
+  <img src="assets/BgeraPrint_Icon.svg" alt="BgeraPrint logo" width="125" />
+</p>
 
 # BgeraPrint
 
