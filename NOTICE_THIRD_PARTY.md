@@ -1,8 +1,3 @@
-BgeraPrint Application
-Copyright (c) 2026 Luka Chakhnashvili. All Rights Reserved.
-
----
-
 This application aggregates and uses the following third-party software executables. 
 These are separate works and are subject to their own respective licenses.
 
