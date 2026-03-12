@@ -28,7 +28,8 @@ Users can:
   Press `M` and paste the full path to a local `.stl` file, then scale and print it.
 
 - **Slice and print via keyboard**  
-  Press `p` to start slicing.  
+  Press `p` to start slicing with the default infill density (15%) and the infill pattern (cubic).
+  For changing the infill density and pattern type them after letter `p`. (e.g. `p45gyroid` means `45%` infill density and `gyroid` infill pattern).
   Press `p` again to send the print job to the printer over Wi-Fi.
 
 - **Receive spoken instructions**  
@@ -63,7 +64,7 @@ The only way to change this settings is to delete config.json file that is creat
 | Generate basic shape | `shape_name` + Enter |
 | Select built-in model | `model_name` + Enter |
 | Import custom STL | `M` + Enter + Path to the .stl file + Enter|
-| Slice / continue print process | `p` |
+| Slice / continue print process | `p` or `p{infill_density}{infill_pattern}` for custom infil density and pattern  |
 | Exit application | `b` (instead of pressing `p` for printing) |
 
 ---
