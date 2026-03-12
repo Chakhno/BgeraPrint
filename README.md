@@ -19,10 +19,10 @@ BgeraPrint enables users to generate and print 3D models entirely from the keybo
 Users can:
 
 - **Generate basic shapes**  
-  Create cubes, cylinders, cones, pyramids, or spheres by typing the shape name and entering dimensions according to instructions.
+  Create a `cube`, `cylinder`, `cone`, `pyramid`, or a `sphere` by typing the shape name and entering dimensions according to instructions.
 
 - **Print built-in complex models**  
-  Select predefined models by name and apply a custom scaling factor.
+  Select predefined models (e.g. `lion`, `turtle`, `giraffe` and `wolf`) by name and apply a custom scaling factor.
 
 - **Print custom models**  
   Press `M` and paste the full path to a local `.stl` file, then scale and print it.
