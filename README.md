@@ -29,7 +29,8 @@ Users can:
 
 - **Slice and print via keyboard**  
   Press `p` to start slicing with the default infill density (15%) and the infill pattern (cubic).
-  For changing the infill density and pattern type them after letter `p`. (e.g. `p45gyroid` means `45%` infill density and `gyroid` infill pattern).
+  Change the infill density and pattern by typing them after letter `p` (e.g. `p45gyroid` means `45%` infill density and `gyroid` infill pattern).
+  
   Press `p` again to send the print job to the printer over Wi-Fi.
 
 - **Receive spoken instructions**  
