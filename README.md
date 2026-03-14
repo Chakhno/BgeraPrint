@@ -22,7 +22,7 @@ Users can:
   Create a `cube`, `cylinder`, `cone`, `pyramid`, or a `sphere` by typing the shape name and entering dimensions according to instructions.
 
 - **Print built-in complex models**  
-  Select predefined models (e.g. `lion`, `turtle`, `giraffe` and `wolf`) by name and apply a custom scaling factor.
+  Select predefined models (e.g. `lion`, `turtle`, `giraffe`, `wolf`, `camel`, `rocket`, `pawn`, `rook`, `queen`, `king`, `bishop`, `knight`) by name and apply a custom scaling factor.
 
 - **Print custom models**  
   Press `M` and paste the full path to a local `.stl` file, then scale and print it.
@@ -35,6 +35,7 @@ Users can:
 
 - **Receive spoken instructions**  
   All steps are accompanied by audio prompts in the selected language.
+  The application has a built-in keyboard reader.
 
 Generated `.scad`, `.stl`, and `.gcode` files are automatically saved to the user’s **Downloads** folder.
 
