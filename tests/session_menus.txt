@@ -1,0 +1,72 @@
+#!menus
+# The menu interface, played from a file.
+#
+# The #!menus line on top matters: after the first command these lines are
+# ANSWERS TO MENUS, not typed commands, so the test that checks every line
+# is a real command skips this file, and a test that actually plays it and
+# looks at the model that comes out checks it instead.
+#
+#     python -m tests.play tests/session_menus.txt --fresh
+#
+# There is no keyboard when a file is playing, so the menus ask for a typed
+# answer instead: a number, or the name of the choice. Everything else is
+# identical, which is what makes this worth having -- it proves the menus
+# reach the same places the arrow keys do.
+#
+# Sizes are typed here for the same reason: you cannot hold an arrow key
+# down in a text file, so the app switches to typed numbers by itself
+# whenever it is being fed from one.
+#
+# Note where there is NO line below: when only one answer is possible the
+# app just takes it rather than asking. Sitting the braille on the plate
+# does not ask which plate, because there is only one.
+#
+# Listen to the output. Every line should make sense read aloud, and nothing
+# should say "I do not understand" or "I do not know that one".
+
+# Switch into the menus from the typing side.
+menu
+
+# Make a shape -> Plate, then each measurement in turn.
+Make a shape
+Plate
+Width
+90
+Length
+30
+Height
+3
+That is the right size
+
+# Make a shape -> Braille. It asks for the words, then the one measurement
+# a braille plate has, so there is no "that is the right size" here.
+Make a shape
+Braille
+luka
+2
+
+# Sit the braille on the plate. It does not ask which part to sit it on,
+# because the plate is the only other one there is.
+Move a part about
+braille
+Sit it on top of another part
+That is where I want it
+
+# Join them. Again the second part is not asked for: only one is left.
+Put parts together
+Join them into one piece
+plate
+
+# Listen to what has been made.
+Listen to your model
+The whole model, in sentences
+
+# Change a print setting through the menus.
+Change how it prints
+Walls
+3
+That is all
+
+# And leave.
+Leave BgeraPrint
+Yes

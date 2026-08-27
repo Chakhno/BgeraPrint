@@ -1,0 +1,41 @@
+{
+  // So Pylance resolves "import bgera" and "from tests.helpers import ..."
+  // without underlining them in red.
+  "python.analysis.extraPaths": ["${workspaceFolder}"],
+  "python.autoComplete.extraPaths": ["${workspaceFolder}"],
+
+  // The Testing panel on the left, with a green arrow beside every test.
+  "python.testing.unittestEnabled": true,
+  "python.testing.pytestEnabled": false,
+  "python.testing.cwd": "${workspaceFolder}",
+  "python.testing.unittestArgs": [
+    "-v",
+    "-s", "${workspaceFolder}/tests",
+    "-p", "test_*.py"
+  ],
+
+  "python.terminal.executeInFileDir": false,
+
+  // Keep the noise down: none of this is source.
+  "files.exclude": {
+    "**/__pycache__": true,
+    "work": true
+  },
+  "search.exclude": {
+    "assets/bin": true,
+    "assets/models": true,
+    "build": true,
+    "dist": true,
+    "selftest-output": true
+  },
+
+  "[python]": {
+    "editor.rulers": [79],
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "python-envs.defaultEnvManager": "ms-python.python:conda",
+  "python-envs.defaultPackageManager": "ms-python.python:conda"
+}

@@ -1,0 +1,48 @@
+# Every shape and a spread of settings, to hear how the wording reads.
+# Play it after changing any message:
+#     python -m tests.play tests/session_shapes.txt
+new
+cube
+width 30 length 20 height 10
+ball
+across 30
+rod
+across 20 height 40
+cone
+pyramid
+across 30 height 40 sides 3
+prism
+tube
+across 30 height 40 thick 3
+ring
+donut
+wedge
+star
+across 40 height 5 points 7
+plate
+text Nino
+braille nino
+list
+size
+new
+cube
+round 4
+hollow 2
+mirror left
+copy 3 gap 40 right
+describe
+undo
+undo
+undo
+undo
+describe
+supports
+quality fine
+walls 3
+brim 5
+material petg
+vase on
+settings
+normal
+settings
+quit
