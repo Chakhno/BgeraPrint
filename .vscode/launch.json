@@ -1,0 +1,86 @@
+{
+  // Press F5, then pick one of these from the box at the top.
+  //
+  // Every config uses "integratedTerminal" on purpose. BgeraPrint asks
+  // questions with input(), and the VS Code Debug Console cannot type back,
+  // so a run there looks frozen at the first question. If a config of your
+  // own ever seems to hang, that is nearly always why.
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "BgeraPrint",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/BgeraPrint.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "BgeraPrint (play a session file)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "tests.play",
+      "args": ["tests/session_badge.txt", "--fresh"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Fast tests",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "tests.test_bgera",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Session tests",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "tests.test_session",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Self test (everything, real programs)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "tests.selftest",
+      "args": ["--keep", "${workspaceFolder}/selftest-output"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Self test (quick, shapes only)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "tests.selftest",
+      "args": ["--quick"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Georgian still to translate",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "bgera.texts",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "The file I am looking at",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    }
+  ]
+}

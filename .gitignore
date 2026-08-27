@@ -1,0 +1,47 @@
+# -------------------------------------------------------------------------
+# What does not belong in the repository
+# -------------------------------------------------------------------------
+
+# OpenSCAD and PrusaSlicer, which the app carries in assets/bin.
+# 242 MB of somebody else's compiled programs. They are not ours to keep in
+# our history, every clone would have to download them, and PrusaSlicer.dll
+# alone is 66 MB, which GitHub complains about. See the README for where to
+# get them. Everything else under assets IS ours and is committed.
+assets/bin/
+
+# PyInstaller's own output.
+build/
+dist/
+*.manifest
+
+# Your language, printer model, IP address and port. Personal to whoever
+# ran the app, and an IP address on a school network is nobody's business
+# but the school's.
+config.json
+
+# Made while the app runs.
+work/
+projects/
+selftest-output/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Editors and operating systems
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Things the app makes and leaves in Downloads, in case anyone works there
+bgeraprint_model.*
+*.gcode

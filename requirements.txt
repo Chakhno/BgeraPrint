@@ -1,0 +1,11 @@
+# What BgeraPrint needs, beyond what comes with Python.
+#
+#   python -m pip install -r requirements.txt
+#
+# OpenSCAD and PrusaSlicer are not installed this way. They ship inside
+# app/assets/bin and the app finds them there by itself.
+
+requests>=2.28
+
+# Only needed to build the exe, not to run the app from source.
+pyinstaller>=6.0

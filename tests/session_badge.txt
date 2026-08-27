@@ -1,0 +1,28 @@
+# A whole session, one command per line, exactly as a student would type it.
+# Lines starting with # are ignored.
+#
+# On Windows:   type tests\session_badge.txt | dist\BgeraPrint.exe
+# From source:  python BgeraPrint.py < tests/session_badge.txt
+#
+# Listen to the output. Every line should be a sentence that makes sense
+# when read aloud, and nothing should say "I do not understand".
+
+help
+plate
+width 90 length 30 height 3
+braille luka
+put braille on plate
+join
+describe
+size
+walls 3
+quality fine
+settings
+prepare
+save badge
+list
+undo
+list
+redo
+check
+quit
